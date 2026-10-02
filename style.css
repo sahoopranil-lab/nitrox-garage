@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080808;
+    color: white;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    border-bottom: 1px solid #222;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ff2b2b;
+}
+
+.logo span {
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff2b2b;
+}
+
+
+/* =========================
+   HERO / HOME
+========================= */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 100px 8% 50px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.85)
+        ),
+        url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80")
+        center/cover;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero h1 {
+    font-size: 65px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #ff2b2b;
+}
+
+.hero p {
+    color: #ccc;
+    font-size: 19px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn {
+    display: inline-block;
+    padding: 14px 30px;
+    background: #ff2b2b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    color: #111;
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   GENERAL SECTION
+========================= */
+
+section {
+    padding: 120px 8% 90px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.title h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.title p {
+    color: #999;
+}
+
+
+/* =========================
+   CARS
+========================= */
+
+.cars {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.car-card {
+    background: #121212;
+    border: 1px solid #242424;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.car-card:hover {
+    transform: translateY(-10px);
+    border-color: #ff2b2b;
+    box-shadow: 0 10px 35px rgba(255, 43, 43, 0.2);
+}
+
+.car-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.car-info {
+    padding: 22px;
+}
+
+.car-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.car-info p {
+    color: #aaa;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   GAMING
+========================= */
+
+.gaming {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0e0e0e;
+}
+
+.gaming-box {
+    text-align: center;
+    max-width: 850px;
+    margin: auto;
+}
+
+.gaming-box h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.gaming-box h2 span {
+    color: #ff2b2b;
+}
+
+.gaming-box p {
+    color: #aaa;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   PERFORMANCE
+========================= */
+
+.performance {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.stat {
+    background: #121212;
+    padding: 30px 15px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #222;
+    transition: 0.3s;
+}
+
+.stat:hover {
+    border-color: #ff2b2b;
+    transform: translateY(-5px);
+}
+
+.stat h3 {
+    font-size: 32px;
+    color: #ff2b2b;
+}
+
+.stat p {
+    color: #aaa;
+    margin-top: 8px;
+}
+
+
+/* =========================
+   ABOUT / CREATOR
+========================= */
+
+.creator {
+    min-height: 100vh;
+    text-align: center;
+    background: #0b0b0b;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.creator h2 {
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+.creator h2 span {
+    color: #ff2b2b;
+}
+
+.creator p {
+    color: #999;
+    font-size: 18px;
+}
+
+.creator-name {
+    color: white;
+    font-weight: bold;
+}
+
+
+/* =========================
+   CREATOR PHOTO
+========================= */
+
+.creator-photo {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 25px auto;
+    display: block;
+    border: 3px solid #ff2b2b;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #050505;
+    border-top: 1px solid #222;
+    color: #888;
+}
+
+footer span {
+    color: #ff2b2b;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .cars {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .performance {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    nav {
+        padding: 18px 5%;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .cars {
+        grid-template-columns: 1fr;
+    }
+
+    .performance {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 100px 6% 50px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .gaming-box h2 {
+        font-size: 35px;
+    }
+
+    .creator h2 {
+        font-size: 28px;
+    }
+}
